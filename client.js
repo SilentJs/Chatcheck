@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://exquisite-custard-45c4ef.netlify.app/');
 const messages = document.getElementById('messages');
 const msgForm = document.getElementById('msgForm');
 
