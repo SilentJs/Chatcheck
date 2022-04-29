@@ -1,11 +1,6 @@
 const mongoose = require('mongoose');
 const Msg = require('./models/messages');
-const io = require('socket.io')(3000,{
-    cors: {
-      origin: "103.252.27.178",
-      methods: ["GET", "POST"]
-    }
-  });
+const io = require('socket.io')(3000);
 const mongoDB = 'mongodb+srv://kvdrdo-chat:FXf6zVwZNpAG9nab@cluster0.lqt4d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
